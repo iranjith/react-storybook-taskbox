@@ -33,7 +33,7 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinnedTask }) => {
         {state !== "TASK_ARCHIVED" && (
           <button
             className="pin-button"
-            onClick={() => onPinTask(id)}
+            onClick={() => onPinnedTask(id)}
             id={`pinTask-${id}`}
             aria-label={`pinTask-${id}`}
             key={`pinTask-${id}`}
